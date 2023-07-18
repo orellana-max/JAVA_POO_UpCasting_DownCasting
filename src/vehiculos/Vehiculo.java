@@ -20,11 +20,15 @@ public class Vehiculo {
     public String getMarca(){
         return marca;
     }
-
+    
     public void setMarca(String nuevaMarca) {
         if (nuevaMarca != null) {
             this.marca = nuevaMarca;
         }
+    }
+    
+    public String getModelo(){
+        return modelo;
     }
     
     public void acelerar(){

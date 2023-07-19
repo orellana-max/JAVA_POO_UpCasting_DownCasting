@@ -19,11 +19,10 @@ public class Concesionaria {
         //System.out.println(v.getModelo() + " Es un Auto?: " + (v instanceof Auto));
         this.vehiculos.add(v);
         if (v instanceof Auto) {
-            System.out.println("Se agrego un Auto");
-        } else if(v instanceof Moto) {
-            System.out.println("Se agrego una Moto");
+            Auto a = (Auto) v;
+            a.prenderAire();
         } else {
-            System.out.println("Se agrego un Vehiculo");
+            ((Moto) v).hacerWheliee();            
         }
     }
     
